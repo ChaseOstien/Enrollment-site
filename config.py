@@ -1,4 +1,6 @@
 import os
 
 class Config(object):
-    SECRET_KeY = os.environ.get('SECRET_KEY') or 'This_is_a_secret'
+    SECRET_KEY = os.environ.get('SECRET_KEY') or 'This_is_a_secret'
+
+    MONGO_SETTINGS = { 'db' : 'UTA_Enrollment', 'host': 'mongodb://localhost:27017/UTA_Enrollment' }
